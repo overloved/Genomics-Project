@@ -1,0 +1,174 @@
+\documentclass[a4paper,12pt]{article}
+%\documentclass[a4paper,12pt]{amsart}
+\author{Don Knuth}
+\title{The \TeX\ Book}
+\date{\today}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\maketitle
+\section{Special characters}
+
+\textbf{Exercise 6.} \textit{Prove Fermat's Theorem.}
+See table~\ref{tab:test} on page~\pageref{tab:test}.
+\subsection{Accents}
+\begin{tabular}{l r r r c} 
+Name&Exam1&Exam2&Exam3&Grade\\
+John&19& 28&33&C \\
+Jane&49& 35&60&B  \\
+Jim&76& 38&59&A 
+\end{tabular}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{| l || r | r | r | c |}  
+\hline
+Name&Exam1&Exam2&Exam3&Grade\\
+\hline\hline
+John&19& 28&33&C \\  
+\hline
+Jane&49& 35&60&B  \\
+\hline
+Jim&76& 38&59&A  \\
+\hline
+\end{tabular}
+\caption{Math 361 Grades\label{tab:test}} 
+\end{center}
+\end{table}
+
+\subsection{Braces}
+$\mathbf{R}$
+
+\smallskip
+\noindent\textbf{Fermat's Last Theorem.}
+\textit{For $n\ge3$, 
+the equation $x^n+y^n=z^n$ has no non-trivial integer solutions.}
+\smallskip
+\begin{proof} See Wiles.
+\end{proof}
+
+\begin{itshape}
+The polynomial $p(t)$ splits...
+\end{itshape}
+
+\subsection{Dollar signs}
+\[
+\left|\sum_{i=1}^n (\quad's) a_ib_i\right|
+\le
+\left(\sum_{i=1}^n a_i^2\right)^{1/2}
+\left(\sum_{i=1}^n b_i^2\right)^{1/2}
+\]
+
+\section{Sectioning}
+\begin{center}123 \end{center}
+\begin{quote} 345\end{quote}
+
+\begin{itemize}
+\item This is the first item
+\item This is the second item
+\item This is the last itme
+\end{itemize}
+
+\smallskip
+\textbf{Some special characters in TeX:}\cite{hA70,eM57}
+\begin{enumerate}
+\item Accents  
+\item Braces 
+\item Dollar signs 
+\end{enumerate}
+
+\begin{equation}
+\sum_{k=1}^n k^2, \frac{a}{q}, \int_1^x\frac{1}{x}dx, \sin(x), \arcsin(x), e^{2 \pi i}
+\end{equation}
+\begin{align*} 
+(a+b)^3 &= (a+b)^2(a+b)\\
+&=(a^2+2ab+b^2)(a+b)\\
+&=(a^3+2a^2b+ab^2) + (a^2b+2ab^2+b^3)\\
+&=a^3+3a^2b+3ab^2+b^3
+\end{align*}
+\section{Conclusion}
+1d23
+
+\begin{thebibliography}{99}
+\bibitem{hA70}
+Henry~H. Albert,
+\emph{Free torsoids},
+Current trends in lattice theory.
+D.~Van Nostrand, 1970.
+\bibitem{hA70a}
+Henry~H. Albert,
+\emph{Free torsoids},
+Current trends in lattice theory
+(G.\,H. Birnbaum, ed.).
+vol.~7, D.~Van Nostrand, Princeton, January, 1970,
+no translation available, pp.~173--215 (German).
+\bibitem{sF90}
+Soo-Key Foo,
+\emph{Lattice Constructions},
+Ph.D. thesis, University of Winnebago, 1990.
+262
+Chapter 10 LATEX documents
+\bibitem{sF90a}
+Soo-Key Foo,
+\emph{Lattice Constructions},
+Ph.D. thesis, University of Winnebago, Winnebago, MN,
+December 1990, final revision not yet available.
+\bibitem{gF86}
+Grant~H. Foster,
+\emph{Computational complexity in lattice theory},
+tech. report, Carnegie Mellon University, 1986.
+\bibitem{gF86a}
+Grant~H. Foster,
+\emph{Computational complexity in lattice theory},
+Research Note 128A, Carnegie Mellon University,
+Pittsburgh, PA, December, 1986,
+research article in preparation.
+\bibitem{pK69}
+Peter Konig,
+\emph{Composition of functions}.
+Proceedings of the Conference on Universal Algebra
+(Kingston, 1969).
+\bibitem{pK69a}
+Peter Konig,
+\emph{Composition of functions}.
+Proceedings of the Conference on Universal Algebra
+(G.~H. Birnbaum, ed.).
+vol.~7, Canadian Mathematical Society,
+Queen’s Univ., Kingston, ON,
+available from the Montreal office,
+pp.~1--106 (English).
+\bibitem{wL75}
+William~A. Landau,
+\emph{Representations of complete lattices},
+Abstract: Notices Amer. Math. Soc. \textbf{18}, 937.
+\bibitem{wL75a}
+William~A. Landau,
+\emph{Representations of complete lattices},
+Abstract: Notices Amer. Math. Soc. \textbf{18}, 937,
+December, 1975.
+\bibitem{gM68}
+George~A. Menuhin,
+\emph{Universal algebra}.
+D.~Van Nostrand, Princeton, 1968.
+10.5 Back matter
+263
+\bibitem{gM68a}
+George~A. Menuhin,
+\emph{Universal algebra}. 2nd ed.,
+University Series in Higher Mathematics, vol.~58,
+D.~Van Nostrand, Princeton,
+March, 1968 (English), no Russian translation.
+\bibitem{eM57}
+Ernest~T. Moynahan,
+\emph{On a problem of M. Stone},
+Acta Math. Acad. Sci. Hungar.
+\textbf{8}~(1957), 455--460.
+\bibitem{eM57a}
+Ernest~T. Moynahan,
+\emph{On a problem of M. Stone},
+Acta Math. Acad. Sci. Hungar.
+\textbf{8}~(1957), 455--460
+(English), Russian translation available.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,110 @@
+\documentclass[a4paper,12pt]{article}
+%\documentclass[a4paper,12pt]{amsart}
+\author{Xiang Niu, Yao Huang}
+\title{The \TeX\ Book}
+\date{\today}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\maketitle
+\section{Abstract}
+\section{Introduction}
+\section{Prior work}
+In ``linear Work Suffix Array Construction''\cite{simple}, an algorithm \textit{DC} is used to construct suffix arrays with a simple linear-time. Give $v \in [1,\sqrt{n}]$, it runs in $O(vn)$ time using $O(n/\sqrt{v})$ space.
+
+\section{Methods and software}
+\section{Results}
+\section{Conclusion}
+\section{Special characters}
+\textbf{Exercise 6.} \textit{Prove Fermat's Theorem.}
+See table~\ref{tab:test} on page~\pageref{tab:test}.
+\subsection{Accents}
+\begin{tabular}{l r r r c} 
+Name&Exam1&Exam2&Exam3&Grade\\
+John&19& 28&33&C \\
+Jane&49& 35&60&B  \\
+Jim&76& 38&59&A 
+\end{tabular}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{| l || r | r | r | c |}  
+\hline
+Name&Exam1&Exam2&Exam3&Grade\\
+\hline\hline
+John&19& 28&33&C \\  
+\hline
+Jane&49& 35&60&B  \\
+\hline
+Jim&76& 38&59&A  \\
+\hline
+\end{tabular}
+\caption{Math 361 Grades\label{tab:test}} 
+\end{center}
+\end{table}
+
+\subsection{Braces}
+$\mathbf{R}$
+
+\smallskip
+\noindent\textbf{Fermat's Last Theorem.}
+\textit{For $n\ge3$, 
+the equation $x^n+y^n=z^n$ has no non-trivial integer solutions.}
+\smallskip
+\begin{proof} See Wiles.
+\end{proof}
+
+\begin{itshape}
+The polynomial $p(t)$ splits...
+\end{itshape}
+
+\subsection{Dollar signs}
+\[
+\left|\sum_{i=1}^n (\quad's) a_ib_i\right|
+\le
+\left(\sum_{i=1}^n a_i^2\right)^{1/2}
+\left(\sum_{i=1}^n b_i^2\right)^{1/2}
+\]
+
+\section{Sectioning}
+\begin{center}123 \end{center}
+\begin{quote} 345\end{quote}
+
+\begin{itemize}
+\item This is the first item
+\item This is the second item
+\item This is the last itme
+\end{itemize}
+
+\smallskip
+\textbf{Some special characters in TeX:}\cite{simple,parallel}
+\begin{enumerate}
+\item Accents  
+\item Braces 
+\item Dollar signs 
+\end{enumerate}
+
+\begin{equation}
+\sum_{k=1}^n k^2, \frac{a}{q}, \int_1^x\frac{1}{x}dx, \sin(x), \arcsin(x), e^{2 \pi i}
+\end{equation}
+\begin{align*} 
+(a+b)^3 &= (a+b)^2(a+b)\\
+&=(a^2+2ab+b^2)(a+b)\\
+&=(a^3+2a^2b+ab^2) + (a^2b+2ab^2+b^3)\\
+&=a^3+3a^2b+3ab^2+b^3
+\end{align*}
+\section{Conclusion}
+1d23
+
+\begin{thebibliography}{99}
+\bibitem{simple}
+Juha Karkkainen and Peter Sanders,
+\emph{Simple linear work suffix array construction.}
+Automata, Languages and Programming, pages 187–187, 2003.
+\bibitem{parallel}
+Fabian Kulla and Peter Sanders,
+\emph{Scalable parallel suffix array construction.}
+Parallel Computing, 33(9):605–612, 2007.
+\end{thebibliography}
+
+\end{document}
